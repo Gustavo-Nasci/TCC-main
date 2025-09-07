@@ -23,38 +23,35 @@ export function Header() {
     <header style={{
       backgroundColor: darkMode ? '#121212' : '#f9f6f0',
       borderRadius: '30px',
-      margin: '20px',
-      padding: '10px 30px',
+      margin: '20px 40px',
+      padding: '10px 40px',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'space-between',
       boxShadow: darkMode ? '0 0 10px rgba(255,255,255,0.1)' : '0 0 10px rgba(0,0,0,0.1)',
       color: darkMode ? 'white' : 'black'
     }}>
-      <nav style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-        <img src="/icon.png" alt="Logo" style={{ width: '40px', height: '40px' }} />
-        <a href="/" style={{ textDecoration: 'none', color: darkMode ? 'white' : '#000', fontWeight: '600' }}>jogo</a>
-        <a href="/produtos" style={{ textDecoration: 'none', color: darkMode ? 'white' : '#000', fontWeight: '600' }}>Produtos</a>
-        <a href="/quem-somos" style={{ textDecoration: 'none', color: darkMode ? 'white' : '#000', fontWeight: '600' }}>Quem somos</a>
-        <a href="/referencia" style={{ textDecoration: 'none', color: darkMode ? 'white' : '#000', fontWeight: '600' }}>Referência</a>
+      <nav style={{ display: 'flex', alignItems: 'center', gap: '20px', flex: 1, justifyContent: 'space-between' }}>
+        <img src="/icon.png" alt="User Icon" style={{ width: '60px', height: '60px' }} />
+        <a href="/" style={{ textDecoration: 'none', color: darkMode ? 'white' : '#000', fontWeight: '600', fontSize: '1.1rem' }}>Home</a>
+        <a href="/quem-somos" style={{ textDecoration: 'none', color: darkMode ? 'white' : '#000', fontWeight: '600', fontSize: '1.1rem' }}>Quem somos</a>
+        <a href="/referencia" style={{ textDecoration: 'none', color: darkMode ? 'white' : '#000', fontWeight: '600', fontSize: '1.1rem' }}>Referência</a>
+        <a href="/instrucoes" style={{ textDecoration: 'none', color: darkMode ? 'white' : '#000', fontWeight: '600', fontSize: '1.1rem' }}>Instruções</a>
       </nav>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '14px', color: darkMode ? '#ccc' : '#555' }}>
-        <img src="/icon.png" alt="User Icon" style={{ width: '24px', height: '24px' }} />
-        <span>Bem-vindo(a)</span>
-        <a href="/login" style={{ textDecoration: 'underline', color: darkMode ? 'white' : '#000', fontWeight: '600' }}>Entrar ou Cadastrar</a>
-        <img src="/icon.png" alt="Settings Icon" style={{ width: '24px', height: '24px' }} />
+      <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '14px', color: darkMode ? 'white' : '#555' }}>
       </div>
       <button
         onClick={toggleTheme}
         style={{
-          marginLeft: '20px',
+          marginLeft: '40px',
           backgroundColor: '#7bc74d',
           border: 'none',
           borderRadius: '20px',
-          padding: '8px 16px',
+          padding: '10px 20px',
           cursor: 'pointer',
-          fontWeight: '600',
-          color: darkMode ? 'black' : 'white'
+          fontWeight: '700',
+          color: darkMode ? 'black' : 'white',
+          fontSize: '1rem'
         }}
       >
         {darkMode ? 'Light Mode' : 'Dark Mode'}
